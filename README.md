@@ -131,5 +131,5 @@ warpedimg = cv2.warpPerspective(src, transform, (width, height))
 return warpedimg
 ```
 　　  最终图像校正的效果如下：
- 　　 <center>   <img width = 300 height = 450![Alt text](./output.jpg)</center>
+ 　　 <center>   <img width = 300 height = 450 ![Alt text](./output.jpg)/> </center>
 
