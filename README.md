@@ -1,7 +1,7 @@
 # Image-Correction
 ## 实验目的
 输入一张图像，图像中有一张 A4 纸，通过图像处理的方法将其校正，如下：
-<img width = 200 height = 300![Alt text](./input.jpg)      　　　校正之后－＞　  　<img width = 200 height = 300![Alt text](./output.jpg)
+<img width = 200 height = 300>![Alt text](./input.jpg)      　　　校正之后－＞　  　<img width = 200 height = 300>![Alt text](./output.jpg)
 
 ## 实验环境
 Win 10 系统，使用 python 语言以及 opencv 库
