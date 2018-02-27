@@ -1,7 +1,7 @@
 # Image-Correction
 ## 实验目的
 输入一张图像，图像中有一张 A4 纸，通过图像处理的方法将其校正，如下：
-<img width = 200 height = 300>![Alt text](./input.jpg)      　　　校正之后－＞　  　<img width = 200 height = 300>![Alt text](./output.jpg)
+<img width = 200 height = 300![Alt text](./input.jpg)>  　　　校正之后－＞　  　<img width = 200 height = 300 ![Alt text](./output.jpg)>
 
 ## 实验环境
 Win 10 系统，使用 python 语言以及 opencv 库
@@ -23,7 +23,7 @@ Cannyimg = cv2.Canny(blurimg, 35, 189)
 ```
 <br>
 　　  提取边缘得到的灰度图如下：
- 　　 <center>   <img width = 300 height = 450![Alt text](./Cannyimg.jpg) </center>
+ 　　 <center>   <img width = 300 height = 450! [Alt text](./Cannyimg.jpg)> </center>
 >这里所用到的 Canny 函数运用了 1986 年 JOHN CANNY 提出的一个很好的边缘检测算法，它根据对信噪比与定位乘积进行测度，得到最优化逼近算子，也就是 Canny 算子。使用 Canny 边缘检测，必须满足以下两个条件：
 - 能有效地抑制噪声
 - 必须尽量精确确定边缘的位置
