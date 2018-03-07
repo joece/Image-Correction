@@ -25,6 +25,7 @@ Cannyimg = cv2.Canny(blurimg, 35, 189)
 <br>
 　　  提取边缘得到的灰度图如下：
  　　 <center>   <img width = 300 height = 450 src = "./Cannyimg.jpg"/> </center>
+    
 >这里所用到的 Canny 函数运用了 1986 年 JOHN CANNY 提出的一个很好的边缘检测算法，它根据对信噪比与定位乘积进行测度，得到最优化逼近算子，也就是 Canny 算子。使用 Canny 边缘检测，必须满足以下两个条件：
 - 能有效地抑制噪声
 - 必须尽量精确确定边缘的位置
@@ -58,6 +59,7 @@ for i in range(int(np.size(lines)/4)):
 <br>
 　　  通过霍夫变换得到相应的直线描绘在原图上效果如下：
  　　 <center>   <img width = 300 height = 450 src = "./linedimg.jpg"/> </center>
+    
  >霍夫变换是一种用来寻找直线的方法，这里所用到的 HoughLinesP 函数就是运用了霍夫变换的原理，事实上，opencv中有两个运用霍夫变换获取线段的函数，分别是标准霍夫线变换 HoughLines 和 统计概率霍夫线变换 HoughLinesP，具体的原理在此也不多加赘述，有兴趣了解的大可谷歌必应一波，我就直接说一下这里用的统计概率霍夫线变换函数 HoughLinesP 的使用：
 void cv2::HoughLinesP(Mat src, Mat lines, doublerho, double theta, int threshold, double minLineLength, double maxLineGap)
 **src**
